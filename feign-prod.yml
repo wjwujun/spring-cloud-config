@@ -6,7 +6,9 @@ spring:
     mode: LEGACYHTML5
     encoding: UTF-8
     servlet:
-      content-type: text/html
+      content-type: text/html    
+  zipkin:
+    base-url: http://localhost:9411
 
 server:
   port: 8088
@@ -19,6 +21,3 @@ eureka:
 feign:              ##Feign 自带熔断器的，默认是关闭
   hystrix:
     enabled: true
-spring:
-  zipkin:
-    base-url: http://localhost:9411
